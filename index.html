@@ -36,6 +36,14 @@
                     <i v-on:click="nextImage" class="fas fa-chevron-right"></i>
                 </div>
                 <!-- /next -->
+                <!-- nav -->
+                <div class="nav">
+                    <i 
+                    v-for="(image, index) in images"
+                    v-bind:class="(index == imageIndex) ? 'active' : ''"
+                    class="fas fa-circle"></i>
+                </div>
+                <!-- /nav -->
             </div>
             <!-- /wrapper -->
 
