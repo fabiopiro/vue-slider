@@ -38,11 +38,18 @@
                 <!-- /next -->
                 <!-- nav -->
                 <div class="nav">
-                    <i 
+                    <!-- versione "pallino colorato" -->
+                    <!-- <i 
                     v-for="(image, index) in images"
                     v-bind:class="(index == imageIndex) ? 'active' : ''"
                     v-on:click="imageIndex = index"
-                    class="fas fa-circle"></i>
+                    class="fas fa-circle"></i> -->
+                    <!-- /versione "pallino colorato" -->
+                    <i 
+                    v-for="(image, index) in images"
+                    v-bind:class="(index == imageIndex) ? 'fas' : 'far'"
+                    v-on:click="imageIndex = index"
+                    class="fa-circle"></i>
                 </div>
                 <!-- /nav -->
             </div>
