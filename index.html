@@ -41,6 +41,7 @@
                     <i 
                     v-for="(image, index) in images"
                     v-bind:class="(index == imageIndex) ? 'active' : ''"
+                    v-on:click="imageIndex = index"
                     class="fas fa-circle"></i>
                 </div>
                 <!-- /nav -->
