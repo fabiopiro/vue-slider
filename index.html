@@ -21,19 +21,19 @@
 
                 <!-- previous -->
                 <div class="prev">
-                    <i class="fas fa-chevron-left"></i>
+                    <i v-on:click="prevImage" class="fas fa-chevron-left"></i>
                 </div>
                 <!-- /previous -->
 
                 <!-- slider -->
                 <div class="slider">
-
+                    <img v-bind:src="images[imageIndex]" alt="">
                 </div>
                 <!-- /slider -->
 
                 <!-- next -->
                 <div class="next">
-                    <i class="fas fa-chevron-right"></i>
+                    <i v-on:click="nextImage" class="fas fa-chevron-right"></i>
                 </div>
                 <!-- /next -->
             </div>
